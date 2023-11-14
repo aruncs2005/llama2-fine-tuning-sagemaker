@@ -66,12 +66,7 @@ def parse_arge():
 def training_function(args):
     # set seed
     set_seed(args.seed)
-
-    # tsm.init({
-    # "hybrid_shard_degree": 24,
-    # "sm_activation_offloading": True,
-    # })
-
+    
     from huggingface_hub.hf_api import HfFolder;
     HfFolder.save_token(args.access_token)
 
